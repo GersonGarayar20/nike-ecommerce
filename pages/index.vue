@@ -6,15 +6,10 @@
   </header>
   <main class="max-w-7xl m-auto px-8">
     <Slider title="imagenes">
-      <img class="h-full snap-start" src="img/1.jpg" alt="" />
-      <img class="h-full snap-start" src="img/2.jpg" alt="" />
-      <img class="h-full snap-start" src="img/3.jpg" alt="" />
-      <img class="h-full snap-start" src="img/5.jpg" alt="" />
-      <img class="h-full snap-start" src="img/6.jpg" alt="" />
-      <img class="h-full snap-start" src="img/7.jpg" alt="" />
-      <img class="h-full snap-start" src="img/8.jpg" alt="" />
-      <img class="h-full snap-start" src="img/9.jpg" alt="" />
-      <img class="h-full snap-start" src="img/10.jpg" alt="" />
+      <img class="h-full snap-start" src="img/31.jpg" alt="" />
+      <img class="h-full snap-start" src="img/32.jpg" alt="" />
+      <img class="h-full snap-start" src="img/33.jpg" alt="" />
+      <img class="h-full snap-start" src="img/34.jpg" alt="" />
     </Slider>
     <Slider title="Tendencias de la semana">
       <CardSlider />
@@ -34,9 +29,9 @@
         <h2 class="text-xl">Más por descubrir</h2>
       </div>
       <div class="grid grid-cols-3 gap-4">
-        <img class="h-full object-cover" src="img/17.jpg" alt="" />
-        <img class="h-full object-cover" src="img/19.jpg" alt="" />
-        <img class="h-full object-cover" src="img/20.jpg" alt="" />
+        <img class="h-full object-cover" src="img/4.jpg" alt="" />
+        <img class="h-full object-cover" src="img/5.jpg" alt="" />
+        <img class="h-full object-cover" src="img/6.jpg" alt="" />
       </div>
     </section>
   </main>

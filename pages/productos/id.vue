@@ -9,7 +9,7 @@
       </section>
 
       <section class="w-full">
-        <img src="../../public/img/8.jpg" alt="" />
+        <img src="../../public/img/7.jpg" alt="" />
         <img src="img/9.jpg" alt="" />
       </section>
 
