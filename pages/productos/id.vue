@@ -45,11 +45,10 @@
     </section>
     <section>
       <Slider title="También te podría interesar">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <CardSlider />
+        <CardSlider />
+        <CardSlider />
+        <CardSlider />
       </Slider>
     </section>
   </main>

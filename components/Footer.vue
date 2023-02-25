@@ -46,7 +46,9 @@
         </div>
       </div>
       <div class="border-t p-4 mt-4 border-neutral-800">
-        <p class="text-center text-neutral-500">Hecho con mucho</p>
+        <p class="text-center text-neutral-500">
+          © 2023 Nike, Inc. Todos los derechos reservados
+        </p>
       </div>
     </section>
   </footer>

@@ -38,6 +38,14 @@
       <p>¿Quieres ver tus favoritos?</p>
       <a href="">Iniciar sesion</a>
     </section>
+    <section>
+      <Slider title="También te podría interesar">
+        <CardSlider />
+        <CardSlider />
+        <CardSlider />
+        <CardSlider />
+      </Slider>
+    </section>
   </main>
 </template>
 
