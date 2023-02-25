@@ -7,7 +7,11 @@ const talla = ref();
 <template>
   <figure class="flex h-60 gap-4">
     <section>
-      <img class="aspect-square object-cover h-full" src="img/3.jpg" alt="" />
+      <img
+        class="aspect-square object-cover h-full"
+        src="../public/img/3.jpg"
+        alt=""
+      />
     </section>
 
     <section class="flex-1 py-4 flex flex-col justify-between">

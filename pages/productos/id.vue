@@ -10,7 +10,6 @@
 
       <section class="w-full">
         <img src="../../public/img/7.jpg" alt="" />
-        <img src="img/9.jpg" alt="" />
       </section>
 
       <aside class="shrink-0 md:w-96 p-8 flex flex-col gap-4">
