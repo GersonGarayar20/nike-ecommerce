@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const { data } = await useFetch("/api/products");
+</script>
 <template>
   <header class="">
     <div class="h-96 w-full overflow-hidden bg-red-300">
@@ -8,7 +11,7 @@
       />
     </div>
   </header>
-  <main class="max-w-7xl m-auto px-8">
+  <main class="max-w-7xl m-auto px-4 md:px-8">
     <Slider title="imagenes">
       <img class="h-full snap-start" src="../public/img/31.jpg" alt="" />
       <img class="h-full snap-start" src="../public/img/32.jpg" alt="" />
@@ -16,23 +19,22 @@
       <img class="h-full snap-start" src="../public/img/34.jpg" alt="" />
     </Slider>
     <Slider title="Tendencias de la semana">
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
-      <CardSlider />
+      <template v-for="{ id, nombre, categoria, imagen, precio } in data">
+        <CardSlider
+          :id="id"
+          :nombre="nombre"
+          :categoria="categoria"
+          :imagen="imagen[0]"
+          :precio="precio"
+        />
+      </template>
     </Slider>
 
     <section class="mb-16">
       <div class="py-6">
         <h2 class="text-xl">Más por descubrir</h2>
       </div>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-3 gap-4">
         <img class="h-full object-cover" src="../public/img/4.jpg" alt="" />
         <img class="h-full object-cover" src="../public/img/5.jpg" alt="" />
         <img class="h-full object-cover" src="../public/img/6.jpg" alt="" />
@@ -40,7 +42,5 @@
     </section>
   </main>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped></style>

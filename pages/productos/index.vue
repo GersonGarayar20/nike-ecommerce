@@ -2,6 +2,8 @@
 import { ref } from "vue";
 const filtro = ref(false);
 const ordernar = ref(false);
+
+const { data } = await useFetch("/api/products");
 </script>
 <template>
   <NavSticky title="Hombre">
@@ -30,7 +32,7 @@ const ordernar = ref(false);
       </Transition>
     </button>
   </NavSticky>
-  <main class="max-w-7xl m-auto px-8">
+  <main class="max-w-7xl m-auto px-4 md:px-8">
     <section class="flex">
       <AsideSticky>
         <aside
@@ -41,13 +43,15 @@ const ordernar = ref(false);
         </aside>
       </AsideSticky>
       <section class="grid md:grid-cols-3 grid-cols-2 gap-3 w-full">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <template v-for="{ id, nombre, categoria, imagen, precio } in data">
+          <Card
+            :id="id"
+            :nombre="nombre"
+            :categoria="categoria"
+            :imagen="imagen[0]"
+            :precio="precio"
+          />
+        </template>
       </section>
     </section>
   </main>

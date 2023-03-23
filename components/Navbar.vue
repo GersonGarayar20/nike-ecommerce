@@ -3,7 +3,7 @@
     <div class="flex w-96 shrink">
       <ButtonLogo />
     </div>
-    <div class="flex flex-none">
+    <div class="hidden md:flex flex-none">
       <Nav />
     </div>
     <div class="flex gap-4 justify-end w-96 shrink">

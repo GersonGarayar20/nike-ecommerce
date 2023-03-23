@@ -22,7 +22,7 @@ const left = () => (slider.value.scrollLeft -= 200);
     </div>
     <div
       ref="slider"
-      class="relative overflow-x-scroll flex flex-col flex-wrap h-[400px] scroll-smooth snap-x snap-mandatory"
+      class="relative overflow-x-scroll flex flex-col gap-4 flex-wrap h-[400px] scroll-smooth snap-x snap-mandatory"
     >
       <slot />
     </div>

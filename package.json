@@ -9,6 +9,15 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.4.1",
-    "nuxt": "^3.2.2"
+    "nuxt": "^3.2.2",
+    "prisma": "^4.11.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "@prisma/client": "^4.11.0",
+    "pinia": "^2.0.33"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="w-32 h-32 fill-white hover:bg-neutral-500"
+    class="w-32 h-32 fill-neutral-500"
     viewBox="0 0 40 40"
     xmlns="http://www.w3.org/2000/svg"
   >

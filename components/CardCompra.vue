@@ -3,13 +3,23 @@ import { ref } from "vue";
 
 const cantidad = ref(1);
 const talla = ref();
+
+const props = defineProps([
+  "id",
+  "nombre",
+  "precio",
+  "imagen",
+  "color",
+  "categoria",
+  "cantidad",
+]);
 </script>
 <template>
   <figure class="flex h-60 gap-4">
     <section>
       <img
         class="aspect-square object-cover h-full"
-        src="../public/img/3.jpg"
+        :src="props.imagen"
         alt=""
       />
     </section>
@@ -17,11 +27,11 @@ const talla = ref();
     <section class="flex-1 py-4 flex flex-col justify-between">
       <article class="flex flex-col gap-1">
         <div class="flex justify-between">
-          <h4>Nike Air Force</h4>
-          <p>198,9 €</p>
+          <h4>{{ props.nombre }}</h4>
+          <p>{{ props.precio }} €</p>
         </div>
-        <p class="text-neutral-500">Zapatillas - Hombre</p>
-        <p class="text-neutral-500">Blanco/Negro</p>
+        <p class="text-neutral-500">{{ props.categoria }}</p>
+        <p class="text-neutral-500">{{ props.color }}</p>
         <div class="flex gap-4">
           <div class="flex gap-2 text-neutral-500">
             <span>Talla</span>
