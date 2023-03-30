@@ -7,9 +7,14 @@
       <Nav />
     </div>
     <div class="flex gap-4 justify-end w-96 shrink">
-      <Find />
+      <div class="hidden md:block">
+        <Find />
+      </div>
       <ButtonLike />
       <ButtonCart />
+      <div class="block md:hidden">
+        <NavMobile />
+      </div>
     </div>
   </div>
 </template>
